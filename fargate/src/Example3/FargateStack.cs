@@ -19,8 +19,7 @@ namespace Example3
             var cluster = new Cluster(this, "WhatDayOfWeekCluster", new ClusterProps
             {
                 Vpc = props.Vpc
-            });
-            
+            });            
 
             var logging = new AwsLogDriver(new AwsLogDriverProps()
             {

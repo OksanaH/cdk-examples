@@ -12,9 +12,9 @@ namespace Example3
         {
             var app = new App();
 
-            var vpcStack = new VpcStack(app, "Vpc");
+            var vpcStack = new VpcStack(app, "VpcStack");
 
-            new FargateStack(app, "ContainerStack", new FargateStackProps
+            new FargateStack(app, "FargateStack", new FargateStackProps
             {
                 Vpc = vpcStack.Vpc
             });
